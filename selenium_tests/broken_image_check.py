@@ -17,6 +17,11 @@ driver = webdriver.Chrome("/Users/Student/Downloads/chromedriver")
 
 # driver.quit()
 
+
+
+
+
+#########################
 ###Searching through all images on a page
 
 driver.get("http://the-internet.herokuapp.com/broken_images")

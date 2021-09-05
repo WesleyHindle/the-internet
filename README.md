@@ -81,3 +81,16 @@ Load the page you want to see in your browser:
 ## See Also
 
 - A Docker Image of the-internet ([link](https://hub.docker.com/r/gprestes/the-internet/))
+
+
+
+## Setting up the selenium test folders for use
+## Note: This uses rackup as the web framework, so you may need to update Ruby gems. 
+
+- Download the appropriate version of chrome driver (check your version of Chrome)
+- Install. If you have restrictions for unknown apps then run this in terminal '% xattr -d com.apple.quarantine chromdriver'
+- Install all the gems
+- In the terminal run 'pip install requests'
+- Create a virtual environment `python3 -m venv venv`
+- Activate the virtual environment `. venv/bin/activate`
+- Run selenium using 'python selenium_tests/file_name.py' This uses .py files and not pytest.

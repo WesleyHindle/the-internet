@@ -4,8 +4,11 @@ import time #Here we use this to delay selenium from executing by the number of 
 
 #Clicking Buttons
 
+driver = webdriver.Chrome("/Users/Student/Downloads/chromedriver")  
+
 driver.get("https://the-internet.herokuapp.com/add_remove_elements/")
 #driver.find_element_by_xpath('/html/body/div[2]/div/div/button').click() #This is another way of doing the below. Probably a better way if you're only clicking on it and don't need to input anything 
+
 button = driver.find_element_by_xpath('/html/body/div[2]/div/div/button')
 time.sleep(1)
 for i in range (3):
@@ -15,3 +18,6 @@ for i in range (3):
 for i in range(3): #This deleted the buttons one by one. Works slightly different to normal as each button is identical the xpath becomes button[n], whereas normally it would just be button
     driver.find_element_by_xpath('/html/body/div[2]/div/div/div/button').click()
     time.sleep(1)
+
+time.sleep(2)
+driver.quit()

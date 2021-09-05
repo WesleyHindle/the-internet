@@ -1,5 +1,4 @@
 from selenium import webdriver #Libraries needed
-from selenium.webdriver.common.keys import Keys #This gives you access to keys you so you can use things like the esc or return key. This is different to being able to type.
 import time
 
 driver = webdriver.Chrome("/Users/Student/Downloads/chromedriver")  

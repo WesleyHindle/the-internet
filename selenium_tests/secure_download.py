@@ -12,7 +12,7 @@ driver.quit
 driver.get("http://admin:admin@the-internet.herokuapp.com/download_secure")
 driver.maximize_window()
 
-driver.find_element_by_xpath('/html/body/div[2]/div/div/a[1]').click()
+driver.find_element_by_xpath('/html/body/div[2]/div/div/a[1]').click()          #This downloads the file at index [1]. Expected output may change if the 
 
 time.sleep(3)
 driver.quit()
